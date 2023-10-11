@@ -42,7 +42,7 @@ function SignupForm({ signup }) {
                 <label>Username</label>
                 <input
                     name="username"
-                    value="{formData.username}"
+                    value={formData.username}
                     onChange={handleChange}
                 />
             </div>
@@ -50,8 +50,8 @@ function SignupForm({ signup }) {
                 <label>Password</label>
                 <input
                     type="password"
-                    name="username"
-                    value="{formData.password}"
+                    name="password"
+                    value={formData.password}
                     onChange={handleChange}
                 />
             </div>
@@ -66,7 +66,7 @@ function SignupForm({ signup }) {
             <div>
                 <label>Last name</label>
                 <input
-                    name="firstName"
+                    name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
                 />
