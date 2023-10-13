@@ -18,7 +18,7 @@ function SearchForm({ searchFor }) {
 
     return (
         <div>
-            <form onsubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <input
                     name="searchTerm"
                     placeholder="Enter search term.."
@@ -33,4 +33,4 @@ function SearchForm({ searchFor }) {
     )
 }
 
-export default SearchForm
+export default SearchForm;

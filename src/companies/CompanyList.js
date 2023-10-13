@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SearchForm from "../common/SearchForm";
-import JoblyApi from "./CompanyCard";
+import JoblyApi from "../api/api";
 import CompanyCard from "./CompanyCard";
 import LoadingSpinner from "../common/LoadingSpinner";
 
@@ -11,7 +11,7 @@ function CompanyList() {
 
     useEffect(function getCompaniesOnMount() {
         console.debug("CompanyList, useEffect getCompaniesOnMount");
-        SearchForm();
+        search();
     }, []);
 
     async function search(name) {
